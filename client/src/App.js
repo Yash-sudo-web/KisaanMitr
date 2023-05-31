@@ -3,9 +3,11 @@ import Products from './components/Products';
 import HeadPage from './components/HeadPage';
 import Navbar from './components/Navbar';
 import Login from "./components/login";
+import { Signup } from './components/Signup';
+
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
 
@@ -14,17 +16,12 @@ function App() {
     <>
     <Router>
     <Navbar/>
-        <Switch>
-            <Route exact path="/products">
-                <Products />
-            </Route>
-            <Route exact path="/">
-                <HeadPage />
-            </Route>
-            <Route exact path="/login">
-                <Login />
-            </Route>
-        </Switch>
+    <Routes>
+            <Route exact path="/products" element={<Products />}/>
+            <Route exact path="/" element={<HeadPage />}/>
+            <Route exact path="/login" element={<Login />}/>
+            <Route exact path="/signup" element={<Signup />}/>
+    </Routes>
     </Router>
     </>
   );

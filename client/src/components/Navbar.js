@@ -57,10 +57,10 @@ export default function Navbar() {
                                     </div>
                                     <div className="flex">
                                         <Link
-                                            to="/login"
+                                            to="/Signup"
                                             className="font-medium text-gray-500 hover:text-gray-900 inline-flex items-center transition duration-300 ease-in-out hover:shadow-lg ml-4"
                                         >
-                                            <span>Login</span>
+                                            <span>Signup</span>
                                         </Link>
                                     </div>
                                 </nav>
