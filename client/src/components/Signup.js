@@ -6,7 +6,7 @@ export const Signup = () => {
   const [responseMessage, setResponseMessage] = useState('');
   const handleSubmit=async(e)=>{
     e.preventDefault();
-    const response=await fetch("http://localhost:8080/api/user/signup",{
+    const response=await fetch("https://kisaan-mitr-backend.vercel.app/api/user/signup",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
