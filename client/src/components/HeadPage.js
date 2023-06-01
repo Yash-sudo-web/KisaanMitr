@@ -5,6 +5,7 @@ import '.././App.css'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 
 const products = [
@@ -99,12 +100,12 @@ export default function HeadPage() {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="#"
+                  <Link
+                    to="/Cropchecker"
                     className="transition ease-in-out delay-150 bg-amber-400 text-white hover:-translate-y-1 hover:scale-110 hover:bg-amber-900 duration-300 w-full flex content-centre justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white md:py-4 md:text-lg md:px-10"
                   >
                     Get Started
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
