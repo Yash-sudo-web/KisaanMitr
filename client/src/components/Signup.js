@@ -18,7 +18,7 @@ export const Signup = () => {
     if (response.ok) {
       localStorage.setItem("token", json.jwtData); 
       setResponseMessage(json.message);
-      navigate('/', { replace: true });
+      navigate('/User', { replace: true });
     } else {
       setResponseMessage(json.msg); 
     }
