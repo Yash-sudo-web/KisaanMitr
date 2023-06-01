@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 
 const navigation = [
     { name: 'Home', to: '/' },
-    { name: 'Products', to: '/products' },
+    { name: 'CropChecker', to: '/products' },
+    { name: 'Bazaar', to: '/Bazaar'},
+    { name: 'News',to: '/news'}
 ];
 
 export default function Navbar() {
@@ -16,7 +18,7 @@ export default function Navbar() {
                 <div className="max-w-7xl mx-auto">
                     <div className="relative z-10 pb-8 bg-white sm:pb-1 md:pb-1 lg:max-w-2xl lg:w-full lg:pb-2 xl:pb-3">
                         <svg
-                            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+                            className="hidden lg:block absolute right-0 inset-y-0 h-full w-96 text-white transform translate-x-1/2"
                             fill="currentColor"
                             viewBox="0 0 100 100"
                             preserveAspectRatio="none"
@@ -32,7 +34,7 @@ export default function Navbar() {
                                         <div className="flex items-center justify-between w-full md:w-auto">
                                             <span className="sr-only">Workflow</span>
                                             <img
-                                                className="h-10 max-w=20 ml-4"
+                                                className="h-20 max-w=40 ml-4"
                                                 src={image}
                                                 alt=""
                                             />
@@ -58,9 +60,9 @@ export default function Navbar() {
                                     <div className="flex">
                                         <Link
                                             to="/Signup"
-                                            className="font-medium text-gray-500 hover:text-gray-900 inline-flex items-center transition duration-300 ease-in-out hover:shadow-lg ml-4"
+                                            className="font-medium text-amber-500 hover:text-gray-900 inline-flex animate-pulse transition duration-300 ease-in-out hover:shadow-lg ml-4"
                                         >
-                                            <span>Signup</span>
+                                            <span>Join Us</span>
                                         </Link>
                                     </div>
                                 </nav>

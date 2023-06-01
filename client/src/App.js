@@ -1,5 +1,4 @@
 import './App.css';
-import Products from './components/Products';
 import HeadPage from './components/HeadPage';
 import Navbar from './components/Navbar';
 import Login from "./components/login";
@@ -10,6 +9,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Bazaar from './components/Bazaar';
+import User from './components/User';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
     <Router>
     <Navbar/>
     <Routes>
-            <Route exact path="/products" element={<Products />}/>
+            <Route exact path="/Bazaar" element={<Bazaar />}/>
             <Route exact path="/" element={<HeadPage />}/>
+            <Route exact path="/User" element={<User />}/>
             <Route exact path="/login" element={<Login />}/>
             <Route exact path="/signup" element={<Signup />}/>
     </Routes>
