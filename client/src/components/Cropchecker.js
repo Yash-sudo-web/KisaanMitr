@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cropchecker = () => {
+export const Cropchecker = () => {
   return (
     <div>
       
@@ -8,4 +8,3 @@ const Cropchecker = () => {
   )
 }
 
-export default Cropchecker
