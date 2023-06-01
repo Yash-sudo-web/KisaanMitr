@@ -22,7 +22,7 @@ export default function Login() {
 
     if (json.success) {
       localStorage.setItem("token", json.jwtData);
-      navigate('/', { replace: true });
+      navigate('/User', { replace: true });
     }
     else {
       alert("Invalid Credentials");

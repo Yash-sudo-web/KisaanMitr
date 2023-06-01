@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import React,{ Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Link } from 'react-router-dom'
@@ -8,8 +8,7 @@ const navigation = [
   { name: 'About Us', href: '#' },
   { name: 'Contact Us', href: '#' },
 ]
-
-export default function Bazaar() {
+export const Bazaar = () => {
   return (
     <>
     <div className="relative bg-white overflow-hidden">
