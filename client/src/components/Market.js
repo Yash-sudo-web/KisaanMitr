@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 const products = [
     {
       id: 1,
@@ -57,8 +57,7 @@ const products = [
     imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
   },
   ]
-
-const Market = () => {
+export const Market = () => {
   return (
     <>
     <div className="mx-auto container px-6 xl:px-0 py-12">
@@ -97,7 +96,5 @@ const Market = () => {
       </div>
     </div>
 </>
-  );
-};
-
-export default Market;
+  )
+}
