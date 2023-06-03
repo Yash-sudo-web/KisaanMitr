@@ -51,18 +51,18 @@ const products = [
       imageSrc: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
   },{
-    id: 6,
-    name: 'Bacterial Spot',
-    href: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
+    id: 7,
+    name: 'Bacterial ring rot',
+    href: 'https://ipm.ucanr.edu/agriculture/potato/bacterial-ring-rot/#:~:text=The%20bacterial%20ring%20rot%20bacterium,commonly%20when%20seed%20is%20cut.',
 
-    imageSrc: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
+    imageSrc: 'https://www.growingproduce.com/wp-content/uploads/2013/05/41851.jpg',
     imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
 },{
-  id: 6,
-  name: 'Bacterial Spot',
-  href: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
+  id: 8,
+  name: 'Tan spot',
+  href: 'https://cropwatch.unl.edu/plantdisease/wheat/tan-spot',
 
-  imageSrc: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
+  imageSrc: 'https://content.peat-cloud.com/w400/tan-spot-wheat-1582621602.jpg',
   imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
 },
 ]
