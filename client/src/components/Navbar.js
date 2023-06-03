@@ -8,7 +8,7 @@ const navigation = [
     { name: 'Home', to: '/' },
     { name: 'CropChecker', to: '/products' },
     { name: 'Bazaar', to: '/Bazaar'},
-    { name: 'News',to: '/news'}
+    { name: 'News',to: 'https://kisan-samachar.vercel.app/'}
 ];
 
 export default function Navbar() {

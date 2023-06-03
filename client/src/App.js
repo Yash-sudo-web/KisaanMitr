@@ -14,7 +14,6 @@ import Login from "./components/login";
 import { Signup } from './components/Signup';
 import {Bazaar} from './components/Bazaar';
 import {User} from './components/User';
-
 import {Market} from './components/Market';
 import {Cropchecker} from './components/Cropchecker';
 
@@ -49,7 +48,6 @@ function App() {
     <Navbar/>
     <Routes>
             <Route exact path="/Bazaar" element={<Bazaar />}/>
-            {/* //<Route exact path="/Market1" element={<Marketlist />}/> */}
             <Route exact path="/Market" element={<Market/>}/>
             <Route exact path="/Cropchecker" element={<Cropchecker/>}/>
             <Route exact path="/" element={<HeadPage />}/>
