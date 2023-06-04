@@ -30,6 +30,8 @@ router.post("/signup",[
       const secPass = await bcrypt.hash(req.body.password, salt);
       user = await User.create({
         userName: req.body.userName,
+        occupation: req.body.occupation,
+        description: req.body.description,
         email: req.body.email,
         password: secPass,
       });
@@ -89,7 +91,7 @@ router.post('/getuser', fetchuser, async (req, res) => {
 try{
 userId=req.user.id;
 const user=await User.findById(userId).select("-password");
-res.send(user);
+res.json(user);
 } catch (error) {
 console.log(error.message);
 res.status(500).send("Internal Server Error");

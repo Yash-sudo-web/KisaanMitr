@@ -27,12 +27,24 @@ export const Signup = () => {
   const [Data, setData] = useState({
     userName:"",
     email:"",
-    password:""
+    password:"",
+    occupation:"",
+    description:""
   })
 
-  const handleChange=({currentTarget:input})=>{
-    setData({...Data,[input.name]:input.value})
-  }
+  const handleChange = ({ currentTarget: input }) => {
+    if (input.type === 'radio' && input.checked) {
+      setData((prevData) => ({
+        ...prevData,
+        occupation: input.value
+      }));
+    } else {
+      setData((prevData) => ({
+        ...prevData,
+        [input.name]: input.value
+      }));
+    }
+  };
 
 
   return (
@@ -73,7 +85,30 @@ export const Signup = () => {
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                             </div>
+                            <div>
+                            <label className="block text-sm font-medium leading-6 text-gray-900">
+                                What your occupation?
+                            </label>
+                            <div className="mt-2">
+                                <input type='radio' id='occupation' name='occupation' required value={Data.occupation = "Farmer"} onChange={handleChange} />Farmer<br />
+                                <input type='radio' id='occupation' name='occupation' required value={Data.occupation = "Buyer"} onChange={handleChange} />Buyer<br />
+                                <input type='radio' id='occupation' name='occupation' required value={Data.occupation = "Farmer | Buyer"} onChange={handleChange} />Both<br />
+                            </div>
                         </div>
+                        </div>
+                        <label className="block text-sm font-medium leading-6 text-gray-900">
+                                Give us a brief description about yourself
+                            </label>
+                            <div className="mt-2">
+                                <input
+                                    id="description"
+                                    name="description"
+                                    onChange={handleChange}
+                                    required
+                                    value={Data.description}
+                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                />
+                            </div>
                         <div>
                             <label className="block text-sm font-medium leading-6 text-gray-900">
                                 Email address
@@ -97,11 +132,6 @@ export const Signup = () => {
                                 <label className="block text-sm font-medium leading-6 text-gray-900">
                                     Password
                                 </label>
-                                <div className="text-sm">
-                                    <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                                        Forgot password?
-                                    </a>
-                                </div>
                             </div>
                             <div className="mt-2">
                                 <input
