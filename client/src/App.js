@@ -11,11 +11,13 @@ import './App.css';
 import HeadPage from './components/HeadPage';
 import Navbar from './components/Navbar';
 import Login from "./components/login";
+import Community from './components/Community';
 import { Signup } from './components/Signup';
 import {Bazaar} from './components/Bazaar';
 import {User} from './components/User';
 import {Market} from './components/Market';
 import {Cropchecker} from './components/Cropchecker';
+
 
 
 function App() {
@@ -47,6 +49,7 @@ function App() {
     <Router>
     <Navbar/>
     <Routes>
+            <Route exact path="/community" element={<Community />}/>
             <Route exact path="/Bazaar" element={<Bazaar />}/>
             <Route exact path="/Market" element={<Market/>}/>
             <Route exact path="/Cropchecker" element={<Cropchecker/>}/>

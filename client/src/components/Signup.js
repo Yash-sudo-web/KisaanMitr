@@ -90,10 +90,15 @@ export const Signup = () => {
                                 What your occupation?
                             </label>
                             <div className="mt-2">
-                                <input type='radio' id='occupation' name='occupation' required value={Data.occupation = "Farmer"} onChange={handleChange} />Farmer<br />
-                                <input type='radio' id='occupation' name='occupation' required value={Data.occupation = "Buyer"} onChange={handleChange} />Buyer<br />
-                                <input type='radio' id='occupation' name='occupation' required value={Data.occupation = "Farmer | Buyer"} onChange={handleChange} />Both<br />
-                            </div>
+                                <input type="radio" id="occupationFarmer" name="occupation" value="Farmer" onChange={handleChange} required checked={Data.occupation === "Farmer"}/>
+                                <label htmlFor="occupationFarmer">Farmer</label>
+                                <br />
+                                <input type="radio" id="occupationBuyer" name="occupation" value="Buyer" onChange={handleChange} required checked={Data.occupation === "Buyer"}/>
+                                <label htmlFor="occupationBuyer">Buyer</label>
+                                <br />
+                                <input type="radio" id="occupationBoth" name="occupation" value="Both" onChange={handleChange} required checked={Data.occupation === "Both"}/>
+                                <label htmlFor="occupationBoth">Both</label>
+                                </div>
                         </div>
                         </div>
                         <label className="block text-sm font-medium leading-6 text-gray-900">
