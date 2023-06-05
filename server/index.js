@@ -22,10 +22,10 @@ const server=app.listen(port, () => {
 
 let io = require('socket.io')(server, {
   cors: {
-    origin: '*', // Replace with the appropriate origin(s) allowed to access Socket.IO
-    methods: ['GET', 'POST'], // Specify the allowed methods
-    allowedHeaders: ['Content-Type'], // Specify the allowed headers
-    credentials: true, // Enable credentials if necessary
+    origin: '*',
+    methods: ['GET', 'POST'],
+    allowedHeaders: [], // Empty array to allow all headers
+    credentials: true,
   },
 });
 
