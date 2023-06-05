@@ -15,7 +15,7 @@ const Community = () => {
       return;
     }
   
-    const socketInstance = io('http://localhost:8080');
+    const socketInstance = io('https://kisaan-mitr-backend.vercel.app');
     setSocket(socketInstance);
     setConnected(true);
   };
@@ -64,13 +64,13 @@ const Community = () => {
       'Content-Type': 'application/json',
     };
 
-    fetch('http://localhost:8080/api/chat', { method: 'POST', body: JSON.stringify(data), headers })
+    fetch('https://kisaan-mitr-backend.vercel.app/api/chat', { method: 'POST', body: JSON.stringify(data), headers })
       .then((response) => response.json())
       .then((result) => console.log(result));
   };
 
   const fetchComments = () => {
-    fetch('http://localhost:8080/api/chat')
+    fetch('https://kisaan-mitr-backend.vercel.app/api/chat')
       .then((res) => res.json())
       .then((result) => {
         result.forEach((comment) => {

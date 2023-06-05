@@ -18,7 +18,7 @@ export const User = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/user/getuser', {
+        const response = await fetch('https://kisaan-mitr-backend.vercel.app/api/user/getuser', {
           method: 'POST',
           headers: {
             "auth-token": localStorage.getItem('token'),
