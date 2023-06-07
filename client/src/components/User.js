@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate,Link } from 'react-router-dom';
 
+const loadingImages = [
+  "https://media1.giphy.com/media/eXpd9abiGUSI11E44i/giphy.gif?cid=ecf05e47mkkp0r56zdce1zglh1c1gxvbuglc5uayiu5mxrpz&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+  "https://media2.giphy.com/media/KczI0aXHt26v67IiJt/giphy.gif?cid=ecf05e47peid7k1mukxzkkcjugav7je2b4n2e4wi43cj1z46&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+  "https://media0.giphy.com/media/3o8dp87fBlYq7Y1QVa/giphy.gif?cid=ecf05e47peid7k1mukxzkkcjugav7je2b4n2e4wi43cj1z46&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+  "https://media1.giphy.com/media/qSqt8YzVWLCAQFMPT3/giphy.gif?cid=ecf05e47peid7k1mukxzkkcjugav7je2b4n2e4wi43cj1z46&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+];
+function getRandomImage(images) {
+  const randomIndex = Math.floor(Math.random() * images.length);
+  return images[randomIndex];
+}
 export const User = () => {
   const navigate = useNavigate();
   const [loggedIn, setLoggedIn] = useState(!localStorage.getItem('token'));
@@ -45,7 +55,27 @@ export const User = () => {
   }, []);
 
   if (!user) {
-    return <div>Loading...</div>;
+    return (
+      <>
+      <br></br>
+      <div className="fixed left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 opacity-100 flex flex-col items-center">
+      <br />
+          <img src="https://media.tenor.com/hlKEXPvlX48AAAAi/loading-loader.gif" className=' h-20 w-20' alt="Loading" />
+          <br />
+        <h2 className="text-center text-blue-400 text-3xl font-extrabold">Loading...</h2>
+        <br />
+        <p className="w-1/3 text-center text-white">
+          This may take a few seconds, please don't close this page.
+          <br></br>
+          <br />
+          <img src={getRandomImage(loadingImages)} alt="Loading" />
+          <br />
+        </p>
+      </div>
+      </>
+    );  
+  
+  
   }
   
   return (

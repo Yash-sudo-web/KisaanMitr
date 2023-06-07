@@ -11,6 +11,7 @@ const navigation = [
     { name: 'News',to: 'https://kisan-samachar.vercel.app/'}
 ];
 
+
 export default function Navbar() {
     return (
         <div className="flex justify-center">
@@ -61,7 +62,7 @@ export default function Navbar() {
                                         <Link
                                             to="/signup"
                                             className="font-medium text-amber-500 hover:text-gray-900 inline-flex animate-pulse transition duration-300 ease-in-out hover:shadow-lg ml-4"
-                                        >
+                                            await delay >
                                             <span>Join Us</span>
                                         </Link>
                                     </div>
