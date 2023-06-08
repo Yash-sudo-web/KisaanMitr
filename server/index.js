@@ -21,7 +21,6 @@ const server=app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
 
-const io = require('socket.io')(server, {cors: {origin: "*"}});
 
 io.on('connection', (socket) => {
     console.log(`New connection: ${socket.id}`)
