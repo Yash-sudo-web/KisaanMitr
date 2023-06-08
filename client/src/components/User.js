@@ -16,6 +16,11 @@ export const User = () => {
   const [loggedIn, setLoggedIn] = useState(!localStorage.getItem('token'));
   const [user, setUser] = useState(null); // State to store the user data
 
+  const reload = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    window.location.reload();
+  };
   const logout = () => {
     if (window.confirm("Are you sure you want to log out?")) {
       localStorage.removeItem('token');
@@ -70,12 +75,11 @@ export const User = () => {
           <br />
           <img src={getRandomImage(loadingImages)} alt="Loading" />
           <br />
+          <p className="w-1/3 text-center text-white">If it's taking longer then 10 seconds, please click here to reload<button onClick={reload}></button></p>
         </p>
       </div>
       </>
     );  
-  
-  
   }
   
   return (
