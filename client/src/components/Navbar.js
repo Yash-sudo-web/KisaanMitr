@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const navigation = [
     { name: 'Home', to: '/' },
-    { name: 'CropChecker', to: '/products' },
+    { name: 'CropChecker', to: '/Cropchecker' },
     { name: 'Bazaar', to: '/Bazaar'},
     { name: 'News',to: 'https://kisan-samachar.vercel.app/'}
 ];
