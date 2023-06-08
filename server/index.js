@@ -9,7 +9,6 @@ const bodyParser = require("body-parser");
 connection()
 app.use(express.json());
 app.use(cors());
-
 app.use(bodyParser.json());
 
 app.use("/api/user",user);
@@ -21,6 +20,14 @@ const server=app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
 
+let io = require('socket.io')(server, {
+  cors: {
+    origin: '*',
+    methods: ['GET', 'POST'],
+    allowedHeaders: [], // Empty array to allow all headers
+    credentials: true,
+  },
+});
 
 io.on('connection', (socket) => {
     console.log(`New connection: ${socket.id}`)
