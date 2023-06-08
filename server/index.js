@@ -20,12 +20,11 @@ const server=app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
 
-let io = require('socket.io')(server, {
+const io = require('socket.io')(server, {
   cors: {
-    origin: '*',
+    origin: "https://kisaan-mitr.vercel.app",
     methods: ['GET', 'POST'],
-    allowedHeaders: [Access-Control-Allow-Origin], // Empty array to allow all headers
-    credentials: true,
+    allowedHeaders: [], // Empty array to allow all headers
   },
 });
 
