@@ -24,7 +24,7 @@ let io = require('socket.io')(server, {
   cors: {
     origin: '*',
     methods: ['GET', 'POST'],
-    allowedHeaders: [], // Empty array to allow all headers
+    allowedHeaders: [Access-Control-Allow-Origin], // Empty array to allow all headers
     credentials: true,
   },
 });
