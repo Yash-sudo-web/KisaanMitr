@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 connection()
 app.use(express.json());
 app.use(cors());
-const io = require('socket.io')(server, {cors: {origin: "*"}});
+
 app.use(bodyParser.json());
 
 app.use("/api/user",user);
@@ -21,7 +21,7 @@ const server=app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
 
-
+const io = require('socket.io')(server, {cors: {origin: "*"}});
 
 io.on('connection', (socket) => {
     console.log(`New connection: ${socket.id}`)
