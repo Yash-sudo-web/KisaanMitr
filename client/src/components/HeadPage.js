@@ -6,7 +6,9 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-
+import gurmann from "../static/gur.jpg"
+import yash from "../static/yash.jpeg"
+import har from "../static/harsh.jpg"
 
 const products = [
   {
@@ -364,6 +366,65 @@ export default function HeadPage() {
                 </div>
             </div>
         </div>
+
+
+
+        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      {/* Title */}
+      <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+        <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Our leadership</h2>
+      </div>
+      {/* End Title */}
+      
+      {/* Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="text-center">
+          <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-80 mx-auto" src={yash} alt="Image Description" />
+          <div className="mt-2 sm:mt-4">
+            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
+              Yash Mathur
+            </h3>
+            <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
+              Backend Developer
+            </p>
+          </div>
+        </div>
+        {/* End Col */}
+        
+        <div className="text-center">
+          <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-80 mx-auto" src={gurmann}  alt="Image Description" />
+          <div className="mt-2 sm:mt-4">
+            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
+              Gurmann Singh Jaggi
+            </h3>
+            <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
+              AI developer
+            </p>
+          </div>
+        </div>
+        {/* End Col */}
+        
+        <div className="text-center">
+          <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-80 mx-auto" src={har} alt="Image Description" />
+          <div className="mt-2 sm:mt-4">
+            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
+              Harsh Developer
+            </h3>
+            <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
+              Frontend Developer
+            </p>
+          </div>
+        </div>
+        {/* End Col */}
+        
+        {/* Repeat the above code for the remaining grid items */}
+        
+      </div>
+      {/* End Grid */}
+    </div>
+
+
+
 <section className="bg-white border-spacing-2 border-s-violet-50">
   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
     <div className="mx-auto max-w-screen-md text-center">
