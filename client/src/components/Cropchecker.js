@@ -1,4 +1,6 @@
 import React from 'react'
+import ladki from "../static/ladki.jpg"
+import ladka from "../static/giphy.gif"
 
 export const Cropchecker = () => {
   return (
@@ -27,7 +29,7 @@ export const Cropchecker = () => {
       </div>
       <div className="flex items-center justify-center w-full lg:w-1/2">
         <div className="">
-          <img src="https://o.remove.bg/downloads/492e4cb0-9dc9-4766-baa9-ee49af49f1be/istockphoto-1143302791-612x612-removebg-preview.png"></img>
+          <img src={ladka}></img>
         </div>
       </div>
     </div>
@@ -43,7 +45,7 @@ export const Cropchecker = () => {
   <div className="flex items-center w-full lg:w-1/2">
     <div className="flex items-center justify-center w-full lg:w-1/2">
       <div>
-        <img src="https://static.vecteezy.com/system/resources/previews/006/211/133/original/farmer-woman-work-professional-free-vector.jpg" alt="Crop Image" />
+        <img src={ladki} alt="Crop Image" />
       </div>
     </div>
   </div>
