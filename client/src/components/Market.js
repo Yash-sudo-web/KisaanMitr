@@ -2,80 +2,51 @@ import React from 'react'
 const products = [
     {
       id: 1,
-      name: 'XXX',
-      href: 'https://cropaia.com/blog/rust-diseases/',
-      imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/products/chillisplgeolife_280x.webp?v=1671110705',
-      imageAlt: 'rust',
+      name: 'TrustBasket Neem Oil for Plants ',
+      href: 'https://www.amazon.in/TrustBasket-neem-Oil-Plants-200ml/dp/B07F8R7JPP/ref=sr_1_2_sspa?crid=2A3MGKN15GWRV&keywords=pestisides&qid=1686462525&sprefix=pestidi%2Caps%2C247&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1',
+      imageSrc: 'https://m.media-amazon.com/images/I/51EksoT1BzL._SX679_.jpg',
+      imageAlt: 'Neem Oil',
     },
     {
       id: 2,
-      name: 'XXX',
-      href: 'https://www.epicgardening.com/blight-on-plants/',
-      imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/products/1_10_07cb51ba-c7c7-4b3b-9f91-a83a32da8e3d_280x.webp?v=1671451008',
-      imageAlt: 'Olive.',
+      name: 'Pure Neem Oil Spray On Plants ',
+      href: 'https://www.amazon.in/Natural-Organic-Pressed-Plants-Measuring/dp/B075THM1T3/ref=sr_1_6?keywords=pestisides&qid=1686462616&sr=8-6',
+      imageSrc: 'https://m.media-amazon.com/images/I/81AfNRzeCvL._SX679_.jpg',
+      imageAlt: 'Neem Spray.',
     },
     {
       id: 3,
-      name: 'Powdery Mildew',
-      href: 'https://www.gardendesign.com/how-to/powdery-mildew.html',
-      imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/files/1_2489a9ef-d924-4979-9dcd-83a394face29_280x.webp?v=1684479981',
+      name: 'Pidilite Terminator',
+      href: 'https://www.amazon.in/Pidilite-Terminator-Preservative-Solution-Termite/dp/B08BPNN4CY/ref=sr_1_10?keywords=pestisides&qid=1686462616&sr=8-10',
+      imageSrc: 'https://rukminim2.flixcart.com/image/850/1000/kp5sya80/baking-sparkle-topper/8/m/n/terminetor-spary-shyam-original-imag3g93eqzyytqj.jpeg?q=20',
       imageAlt: '',
     },
     {
       id: 4,
-      name: 'Fusarium Wilt',
-      href: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.planetnatural.com%2Fpest-problem-solver%2Fplant-disease%2Ffusarium-wilt%2F&psig=AOvVaw3qf47iyFIQ5OsaDWMG2AIp&ust=1685628969416000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMD0-LHfn_8CFQAAAAAdAAAAABAE',
-      imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/products/mango-harvester-pack-1-removebg-preview_280x.png?v=1676448916',
-      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-    },{
-        id: 5,
-        name: 'Verticillium Wilt',
-        href: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fag.umass.edu%2Fvegetable%2Ffact-sheets%2Fsolanaceous-verticillium-wilt&psig=AOvVaw2BntYNBPAKtfioF5MudwNS&ust=1685629056477000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCND_utvfn_8CFQAAAAAdAAAAABAJ',
-  
-        imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/files/2_1a869c10-48a6-43ab-a0e5-3ad458f4f048_280x.webp?v=1683792115',
-        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-    },{
-        id: 6,
-        name: 'Bacterial Spot',
-        href: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
-  
-        imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/files/2_1a869c10-48a6-43ab-a0e5-3ad458f4f048_280x.webp?v=1683792115',
-        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-    },{
-      id: 6,
-      name: 'Bacterial Spot',
-      href: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
-  
-      imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/files/2_1a869c10-48a6-43ab-a0e5-3ad458f4f048_280x.webp?v=1683792115',
-      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-  },{
-    id: 6,
-    name: 'Bacterial Spot',
-    href: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
-  
-    imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/files/2_1a869c10-48a6-43ab-a0e5-3ad458f4f048_280x.webp?v=1683792115',
-    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-  },
+      name: 'Pure Neem Oil ',
+      href: 'https://www.amazon.in/IRAS-GARDEN-Neem-Pesticides-Liter/dp/B09RVY56TN/ref=sr_1_25?keywords=pestisides&qid=1686462616&sr=8-25',
+      imageSrc: 'https://m.media-amazon.com/images/I/61TR1mFO-tL._SX679_.jpg',
+      imageAlt: 'Neem Oil',
+    }
   ]
 export const Market = () => {
   return (
     <>
-    <div className="mx-auto container px-6 xl:px-0 py-12">
-      <div className="flex flex-col">
-        <div className="relative">
-          <img
-            className="hidden sm:block w-full h-80"
-            src="https://cdn.pixabay.com/photo/2015/08/03/10/27/banner-873111_960_720.jpg"
-            alt="bohot maka derahe hai"
-          />
-          <div className="absolute sm:bottom-8 bottom-4 pr-10 sm:pr-0 left-4 sm:left-8 flex justify-start items-start">
-            <p className="text-3xl sm:text-4xl font-semibold leading-9 text-slate-100">
-              Our Products
-            </p>
-          </div>
-        </div>
-       </div>
-      </div>
+
+<div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8">
+                <div className="space-y-5 max-w-4xl mx-auto text-center">
+                    <h1 className="text-sm text-indigo-600 font-medium">
+                         Products for everyone
+                    </h1>
+                    <h2 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
+                    Empowering Farmers, Growing Communities  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">& Harvesting a Brighter Future</span>
+                    </h2>  
+                </div>
+                
+            </div>
+
+    
+   
       <div className="bg-white">
       <div className="max-w-2xl mx-auto py-8 px-8 sm:py-4 sm:px-6 lg:max-w-7xl lg:px-4">
         <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
@@ -98,3 +69,4 @@ export const Market = () => {
 </>
   )
 }
+
