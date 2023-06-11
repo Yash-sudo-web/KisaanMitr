@@ -94,11 +94,17 @@ export default function HeadPage() {
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-amber-400 sm:text-5xl md:text-6xl">
-                <span className="block xl: text-600 xl:inline" style={{ marginLeft: '0px' }}>किसान मित्र</span>
+                <span className="block xl: text-600 xl:inline" style={{ marginLeft: '100px' }}>किसान </span>
                 <br></br>
               </h1>
+
+              <h1 className="text-4xl tracking-tight font-extrabold text-400 sm:text-5xl md:text-6xl">
+                <span className="block xl: text-600 xl:inline" style={{ marginLeft: '220px' }}> मित्र</span>
+                <br></br>
+              </h1>
+
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              At KisanMitra, we understand the vital importance of healthy crops in ensuring food security and sustainable agricultural practices. We are proud to present our state-of-the-art web application that revolutionizes the way crop diseases are detected and managed. By harnessing the power of cutting-edge technology, artificial intelligence, and deep learning algorithms, CropCheck offers a comprehensive and efficient solution to identify and combat crop diseases. </p>
+              At KisanMitra, we revolutionize crop disease detection and management with CropCheck. Our web application utilizes advanced technology, AI, and deep learning algorithms to efficiently identify and combat crop diseases, ensuring food security and sustainable agriculture. </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 
                 <div className="mt-3 sm:mt-0 sm:ml-3">
