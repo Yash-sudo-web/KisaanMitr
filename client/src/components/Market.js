@@ -34,48 +34,26 @@ const products = [
   
         imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/files/2_1a869c10-48a6-43ab-a0e5-3ad458f4f048_280x.webp?v=1683792115',
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-    },{
-        id: 6,
-        name: 'Bacterial Spot',
-        href: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
-  
-        imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/files/2_1a869c10-48a6-43ab-a0e5-3ad458f4f048_280x.webp?v=1683792115',
-        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-    },{
-      id: 6,
-      name: 'Bacterial Spot',
-      href: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
-  
-      imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/files/2_1a869c10-48a6-43ab-a0e5-3ad458f4f048_280x.webp?v=1683792115',
-      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-  },{
-    id: 6,
-    name: 'Bacterial Spot',
-    href: 'https://u.osu.edu/vegetablediseasefacts/files/2014/06/bacterialLeafSpot01-1pprt5r-300x225.jpg',
-  
-    imageSrc: 'https://cdn.shopify.com/s/files/1/0722/2059/files/2_1a869c10-48a6-43ab-a0e5-3ad458f4f048_280x.webp?v=1683792115',
-    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-  },
+    }
   ]
 export const Market = () => {
   return (
     <>
-    <div className="mx-auto container px-6 xl:px-0 py-12">
-      <div className="flex flex-col">
-        <div className="relative">
-          <img
-            className="hidden sm:block w-full h-80"
-            src="https://cdn.pixabay.com/photo/2015/08/03/10/27/banner-873111_960_720.jpg"
-            alt="bohot maka derahe hai"
-          />
-          <div className="absolute sm:bottom-8 bottom-4 pr-10 sm:pr-0 left-4 sm:left-8 flex justify-start items-start">
-            <p className="text-3xl sm:text-4xl font-semibold leading-9 text-slate-100">
-              Our Products
-            </p>
-          </div>
-        </div>
-       </div>
-      </div>
+
+<div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8">
+                <div className="space-y-5 max-w-4xl mx-auto text-center">
+                    <h1 className="text-sm text-indigo-600 font-medium">
+                         Products for everyone
+                    </h1>
+                    <h2 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
+                        Design your projects faster with  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">the largest figma UI kit</span>
+                    </h2>  
+                </div>
+                
+            </div>
+
+    
+   
       <div className="bg-white">
       <div className="max-w-2xl mx-auto py-8 px-8 sm:py-4 sm:px-6 lg:max-w-7xl lg:px-4">
         <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
@@ -98,3 +76,4 @@ export const Market = () => {
 </>
   )
 }
+
