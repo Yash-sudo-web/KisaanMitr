@@ -381,10 +381,10 @@ export default function HeadPage() {
         <div className="text-center">
           <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-80 mx-auto" src={yash} alt="Image Description" />
           <div className="mt-2 sm:mt-4">
-            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
+            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg">
               Yash Mathur
             </h3>
-            <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
+            <p className="text-xs text-gray-600 sm:text-sm lg:text-base">
               Backend Developer
             </p>
           </div>
@@ -394,11 +394,11 @@ export default function HeadPage() {
         <div className="text-center">
           <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-80 mx-auto" src={gurmann}  alt="Image Description" />
           <div className="mt-2 sm:mt-4">
-            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
+            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg ">
               Gurmann Singh Jaggi
             </h3>
-            <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-              AI developer
+            <p className="text-xs text-gray-600 sm:text-sm lg:text-base">
+              ML developer
             </p>
           </div>
         </div>
@@ -407,10 +407,10 @@ export default function HeadPage() {
         <div className="text-center">
           <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-80 mx-auto" src={har} alt="Image Description" />
           <div className="mt-2 sm:mt-4">
-            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-              Harsh Developer
+            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg">
+              Harsh Mahajan
             </h3>
-            <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
+            <p className="text-xs text-gray-600 sm:text-sm lg:text-base">
               Frontend Developer
             </p>
           </div>
