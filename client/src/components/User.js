@@ -75,6 +75,7 @@ export const User = () => {
           <br />
           <img src={getRandomImage(loadingImages)} alt="Loading" />
           <br />
+          <p className="w-1/3 text-center text-white">If it's taking longer then 10 seconds, please click here to <button onClick={reload}>Reload</button></p>
         </p>
       </div>
       </>
