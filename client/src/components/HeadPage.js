@@ -485,9 +485,9 @@ export default function HeadPage() {
   <div className="max-w-4xl mx-auto flex justify-between items-center">
     <div className="w-1/2">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-      <p className="text-lg mb-2">355, DG-3 Vikaspuri, New Delhi-110018</p>
+      <p className="text-lg mb-2">33 Gerrard Street West, Toronto</p>
       <p className="text-lg mb-2">+91 9289039721</p>
-      <p className="text-lg mb-2">+91 9810856728</p>
+      <p className="text-lg mb-2">+1 4372549763</p>
     </div>
 
     <div className="w-1/2">
