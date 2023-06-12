@@ -16,16 +16,16 @@ export const Cropchecker = () => {
           CropChecker employs state-of-the-art image analysis techniques to detect subtle visual cues indicative of crop diseases. It can identify various types of diseases, including fungal, bacterial, and viral infections, as well as pest infestations and nutrient deficiencies.
           </p>
 
-          <div className="flex flex-col items-start space-y-3 px-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+          <div className="flex flex-col items-starts space-y-3 px-10 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
             <a
-              href="https://disease-2fq6.onrender.com/"
+              href="https://tom-my8r.onrender.com"
               target="_blank"
               rel="noopener"
               className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
               Tomato
             </a>
             <a
-              href="https://disease-2fq6.onrender.com/"
+              href="https://pot-tm9t.onrender.com"
               target="_blank"
               rel="noopener"
               className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
