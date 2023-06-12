@@ -22,7 +22,14 @@ export const Cropchecker = () => {
               target="_blank"
               rel="noopener"
               className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
-              Let's Play
+              Tomato
+            </a>
+            <a
+              href="https://disease-2fq6.onrender.com/"
+              target="_blank"
+              rel="noopener"
+              className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+              Potato
             </a>
           </div>
         </div>
