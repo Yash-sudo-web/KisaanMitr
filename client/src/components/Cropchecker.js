@@ -6,6 +6,7 @@ export const Cropchecker = () => {
   return (
     <>
     <br></br>
+    <div className="container">
     <div className="flex flex-wrap py-[30px] ">
       <div className="flex items-center w-full lg:w-1/2">
         <div className="max-w-2xl mb-8">
@@ -76,7 +77,7 @@ export const Cropchecker = () => {
     </div>
   </div>
 </div>
-
+</div>
   </>
   )
 }

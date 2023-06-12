@@ -39,7 +39,7 @@ export const Bazaar = () => {
                 <span className="block xl:px-16 text-indigo-600 xl:inline" style={{ marginLeft: '180px' }}>बाजार</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                A leading online marketplace connecting farmers directly to customers, providing opportunities for growth and prosperity.              </p>
+                A leading online marketplace connecting farmers directly to customers, providing opportunities for growth and prosperity.</p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 
                 <div className="mt-3 sm:mt-0 sm:ml-3">

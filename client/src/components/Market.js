@@ -27,12 +27,39 @@ const products = [
       href: 'https://www.amazon.in/IRAS-GARDEN-Neem-Pesticides-Liter/dp/B09RVY56TN/ref=sr_1_25?keywords=pestisides&qid=1686462616&sr=8-25',
       imageSrc: 'https://m.media-amazon.com/images/I/61TR1mFO-tL._SX679_.jpg',
       imageAlt: 'Neem Oil',
+    },
+    {
+      id: 5,
+      name: 'TrustBasket Neem Oil for Plants ',
+      href: 'https://www.amazon.in/TrustBasket-neem-Oil-Plants-200ml/dp/B07F8R7JPP/ref=sr_1_2_sspa?crid=2A3MGKN15GWRV&keywords=pestisides&qid=1686462525&sprefix=pestidi%2Caps%2C247&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1',
+      imageSrc: 'https://m.media-amazon.com/images/I/51EksoT1BzL._SX679_.jpg',
+      imageAlt: 'Neem Oil',
+    },
+    {
+      id: 6,
+      name: 'Pure Neem Oil Spray On Plants ',
+      href: 'https://www.amazon.in/Natural-Organic-Pressed-Plants-Measuring/dp/B075THM1T3/ref=sr_1_6?keywords=pestisides&qid=1686462616&sr=8-6',
+      imageSrc: 'https://m.media-amazon.com/images/I/81AfNRzeCvL._SX679_.jpg',
+      imageAlt: 'Neem Spray.',
+    },
+    {
+      id: 7,
+      name: 'Pidilite Terminator',
+      href: 'https://www.amazon.in/Pidilite-Terminator-Preservative-Solution-Termite/dp/B08BPNN4CY/ref=sr_1_10?keywords=pestisides&qid=1686462616&sr=8-10',
+      imageSrc: 'https://rukminim2.flixcart.com/image/850/1000/kp5sya80/baking-sparkle-topper/8/m/n/terminetor-spary-shyam-original-imag3g93eqzyytqj.jpeg?q=20',
+      imageAlt: '',
+    },
+    {
+      id: 8,
+      name: 'Pure Neem Oil ',
+      href: 'https://www.amazon.in/IRAS-GARDEN-Neem-Pesticides-Liter/dp/B09RVY56TN/ref=sr_1_25?keywords=pestisides&qid=1686462616&sr=8-25',
+      imageSrc: 'https://m.media-amazon.com/images/I/61TR1mFO-tL._SX679_.jpg',
+      imageAlt: 'Neem Oil',
     }
   ]
 export const Market = () => {
   return (
     <>
-
 <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8">
                 <div className="space-y-5 max-w-4xl mx-auto text-center">
                     <h1 className="text-sm text-indigo-600 font-medium">
