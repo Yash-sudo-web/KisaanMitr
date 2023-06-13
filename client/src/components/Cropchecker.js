@@ -6,7 +6,6 @@ export const Cropchecker = () => {
   return (
     <>
     <br></br>
-    <div className="container">
     <div className="flex flex-wrap py-[30px] ">
       <div className="flex items-center w-full lg:w-1/2">
         <div className="max-w-2xl mb-8">
@@ -19,19 +18,13 @@ export const Cropchecker = () => {
 
           <div className="flex flex-col items-starts space-y-10 px-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
             <a
-              href="https://tom-my8r.onrender.com"
+              href="https://dis-43yb.onrender.com"
               target="_blank"
               rel="noopener"
               className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
-              Tomato
+              Try It!
             </a>
-            <a
-              href="https://pot-tm9t.onrender.com"
-              target="_blank"
-              rel="noopener"
-              className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
-              Potato
-            </a>
+            
           </div>
         </div>
       </div>
@@ -77,7 +70,7 @@ export const Cropchecker = () => {
     </div>
   </div>
 </div>
-</div>
+
   </>
   )
 }
