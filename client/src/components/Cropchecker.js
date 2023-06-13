@@ -6,8 +6,8 @@ export const Cropchecker = () => {
   return (
     <>
     <br></br>
-    <div className="flex flex-wrap py-[30px] ">
-      <div className="flex items-center w-full lg:w-1/2">
+    <div className="flex flex-wrap py-[30px] p-[20px] ">
+      <div className="flex items-center w-full lg:w-1/2 ">
         <div className="max-w-2xl mb-8">
           <h1 className="text-3xl font-bold px-3 leading-snug tracking-tight text-amber-400 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight ">
             What Disease Does Your Crop Have?
