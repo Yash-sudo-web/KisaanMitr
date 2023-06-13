@@ -44,7 +44,7 @@ export const Cropchecker = () => {
       <br></br>
       <div className="flex flex-wrap py-[80px]">
   <div className="flex items-center w-full lg:w-1/2">
-    <div className="flex items-center justify-center w-full lg:w-1/2">
+    <div className="flex items-center justify-center w-full lg:w-3/4">
       <div>
         <img src={ladki} alt="Crop Image" />
       </div>
