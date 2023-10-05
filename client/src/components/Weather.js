@@ -6,6 +6,10 @@ const Weather = () => {
     const apiKey = "092ca79e6d5625ce3e2d9a03bc74c283"; // replace with your actual API key
     const [location, setLocation] = useState({ lat: null, lon: null });
     const [weatherData, setWeatherData] = useState(null);
+    const [language, setLanguage] = useState('en');
+    const toggleLanguage = () => {
+        setLanguage(prevLang => prevLang === 'en' ? 'hi' : 'en');
+    }
 
     useEffect(() => {
         if (navigator.geolocation) {
@@ -43,18 +47,47 @@ const Weather = () => {
     };
 
     return (
+        <>
         <div>
+            
         {weatherData ? (
             <div>
+                  {language === 'en' ? (
+                    <div>
+                    <button onClick={toggleLanguage}
+                    class="w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-b-2 border-amber-500 hover:border-amber-600  hover:text-amber-400 shadow-md py-2 px-6 inline-flex items-center">
+                    <span class="mx-auto">हिंदी</span>
+                  </button>
+                     <div className="relative overflow-x-auto mx-auto px-6 sm:px-16 md:px-24 lg:px-32 xl:px-48 text-center">
+                     <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-amber-400 md:text-4xl lg:text-5xl xl:text-6xl">
+                     Empowering Decision-Making with Real-Time Weather Data
+                     </h1>
+                     <p className="mb-6 text-lg font-normal text-green-500 lg:text-xl">
+                     we integrate real-time weather data into our approach. By fetching precise weather information for specific locations, we can make informed decisions about crop viability.
+                     </p>
+                 </div>
+                 </div>
+                       
+                    ) : (
+                        <div>
+                            <button onClick={toggleLanguage}
+                    class="w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-b-2 border-amber-500 hover:border-amber-600  hover:text-amber-400 shadow-md py-2 px-6 inline-flex items-center">
+                    <span class="mx-auto">English</span>
+                  </button>
+                        <div className="relative overflow-x-auto mx-auto px-6 sm:px-16 md:px-24 lg:px-32 xl:px-48 text-center">
+                            <br></br>
+    <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-amber-400 md:text-4xl lg:text-5xl xl:text-6xl">
+        वास्तविक समय के मौसम डेटा से निर्णय लेने की शक्ति
+    </h1>
+    <p className="mb-6 text-lg font-normal text-green-500 lg:text-xl">
+        हम विशिष्ट स्थानों के लिए सटीक मौसम जानकारी प्राप्त करके फसल की व्यावसायिकता के बारे में सूचित निर्णय ले सकते हैं।
+    </p>
+</div>
+</div>
+
+                        
+                    )}
                 <br></br>
-            <div className="relative overflow-x-auto mx-auto px-6 sm:px-16 md:px-24 lg:px-32 xl:px-48 text-center">
-            <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-amber-400 md:text-4xl lg:text-5xl xl:text-6xl">
-            Empowering Decision-Making with Real-Time Weather Data
-            </h1>
-            <p className="mb-6 text-lg font-normal text-green-500 lg:text-xl">
-            we integrate real-time weather data into our approach. By fetching precise weather information for specific locations, we can make informed decisions about crop viability.
-            </p>
-        </div>
         <div className="container bg-grey-lightest mx-auto shadow rounded pb-4 bg-cover" style={{ color: '#606F7B', backgroundColor: 'rgb(165, 182, 198)', backgroundImage: "url('https://68.media.tumblr.com/f6a4004f3092b0d664daeabb95d5d195/tumblr_oduyciOJNb1uhjffgo1_500.gif')" }}>
   <div className="mt-2 p-4 border-b border-grey-light text-center">
     <span className="text-4xl font-thin">{weatherData.name}</span>
@@ -79,7 +112,7 @@ const Weather = () => {
 </div>
 
 
-        
+{language==='en' ? (
                 <table className="container w-full text-sm text-center text-gray-500 ">
                     <thead className="text-xs text-gray-700 uppercase bg-green-100">
                         <tr>
@@ -120,7 +153,49 @@ const Weather = () => {
                             </td>
                         </tr>
                     </tbody>
+                </table>):( <table className="container w-full text-sm text-center text-gray-500 ">
+                    <thead className="text-xs text-gray-700 uppercase bg-green-100">
+                        <tr>
+                            <th scope="col" className="px-6 py-3">
+                            मौसम की जानकारी {weatherData.name}, {weatherData.sys.country}
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                            तापमान
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                            मौसम
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                            नमी
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                            हवा की गति
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr className="bg-white border-b ">
+                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                <img src="https://media3.giphy.com/media/QRhtqYeEywJI4/giphy.gif?cid=ecf05e47d6y6ocb9gg1anvfd5ntk41og4r9l43ituswgf0kb&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="weather" className="w-90 h-47 mr-4 bg-gray-100 border-2 border-gray-300" />
+                            </th>
+                            <td className="px-6 py-4  bg-">
+    {Math.round(weatherData.main.temp - 273.15)}°C
+</td>
+
+                            <td className="px-6 py-4">
+                                {weatherData.weather[0].description}
+                            </td>
+                            <td className="px-6 py-4">
+                                {weatherData.main.humidity}%
+                            </td>
+                            <td className="px-6 py-4 text-gray-900">
+                                {weatherData.wind.speed} m/s
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
+                    
+                )}
             </div>
         ) : (
            
@@ -196,7 +271,7 @@ const Weather = () => {
             </div>
         )}
     </div>
-
+    </>
     );
 };
 
