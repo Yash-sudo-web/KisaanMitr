@@ -16,7 +16,7 @@ import ShareIcon from '@mui/icons-material/Share';
 
 export default function ProductCard({product}) {
     return (
-        <Card key={product.id} sx={{ maxWidth: 345 }}>
+        <Card key={product.id}>
             <CardHeader
                 title={product.title}
                 subheader={product.size}
