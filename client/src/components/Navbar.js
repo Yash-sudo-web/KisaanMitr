@@ -8,7 +8,8 @@ const navigation = [
     { name: 'Home', to: '/' },
     { name: 'CropChecker', to: '/Cropchecker' },
     { name: 'Bazaar', to: '/Bazaar'},
-    { name: 'News',to: 'https://kisan-samachar.vercel.app/'}
+    { name: 'News',to: 'https://kisan-samachar.vercel.app/'},
+    { name: 'Weather', to:'/weather'}
 ];
 
 
