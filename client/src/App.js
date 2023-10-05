@@ -55,6 +55,7 @@ function App() {
             <Route exact path="/Cropchecker" element={<Cropchecker/>}/>
             <Route exact path="/" element={<HeadPage />}/>
             <Route exact path="/User" element={<PrivateRoute element={<User />} />} />
+            <Route exact path="/Signup" element={<PrivateRoute element={<Signup />} />} />
             <Route exact path="/login" element={<PublicRoute element={<Login />} />} />
             <Route exact path="/weather" element={<Weather />} />
     </Routes>
