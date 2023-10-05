@@ -18,6 +18,7 @@ import {User} from './components/User';
 import {Market} from './components/Market';
 import {Cropchecker} from './components/Cropchecker';
 import Weather from './components/Weather';
+import Weather from './components/Weather';
 
 
 function App() {
@@ -57,7 +58,6 @@ function App() {
             <Route exact path="/User" element={<PrivateRoute element={<User />} />} />
             <Route exact path="/Signup" element={<PublicRoute element={<Signup />} />} />
             <Route exact path="/login" element={<PublicRoute element={<Login />} />} />
-            <Route exact path="/weather" element={<Weather/>}/>
     </Routes>
     </Router>
     </>

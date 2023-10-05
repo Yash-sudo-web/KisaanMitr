@@ -9,7 +9,3 @@ In addition to our disease detection capabilities, we are also building a market
 Our project is committed to leveraging advanced technologies and algorithms to improve crop disease management. We understand the challenges faced by farmers and are dedicated to providing them with practical solutions. By combining our expertise in AI and deep learning with the needs of the agrotech industry, we strive to make a positive impact on sustainable agriculture.
 
 Join us in our mission to revolutionize crop disease detection and management. Together, we can enhance food security and create a more sustainable future for agriculture.
-
-Made by - Harsh Mahajan - https://github.com/HarshMN2345
-          Gurmann Singh Jaggi - https://github.com/meilleur04
-          Yash Mathur - https://github.com/Yash-sudo-web
