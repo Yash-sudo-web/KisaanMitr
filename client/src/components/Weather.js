@@ -30,6 +30,7 @@ const Weather = () => {
             lat: location.lat,
             lon: location.lon,
             appid: apiKey,
+            // lang: "hi",
         };
 
         axios.get(apiUrl, { params })
