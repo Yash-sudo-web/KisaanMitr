@@ -126,6 +126,7 @@ const Weather = () => {
            
            <div className=' text-center align-middle px-28'>
             <div className="max-w-md p-8 mx-auto rounded-lg">
+            <img src="https://cdn.dribbble.com/users/1353252/screenshots/7430583/media/f456446ffc1c9a1608b94d6d136dbc0d.gif" alt="weather" className="w-90 h-37 mr-4 bg-gray-100 border-gray-300" />
 	<div className="flex justify-between space-x-8">
 		<div className="flex flex-col items-center">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-24 h-24 p-2 dark:text-yellow-400 fill-current">
@@ -139,7 +140,7 @@ const Weather = () => {
 				<rect width="45.255" height="32" x="73.373" y="400" transform="rotate(-45.001 96.002 416.003)"></rect>
 				<rect width="45.255" height="32.001" x="393.373" y="80" transform="rotate(-45 416 96)"></rect>
 			</svg>
-			<h1 className="text-xl font-semibold">Stockholm</h1>
+			<h1 className="text-xl font-semibold">What's your city?</h1>
 		</div>
 		<span className="font-bold text-8xl">14°</span>
 	</div>
