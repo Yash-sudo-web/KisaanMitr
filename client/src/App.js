@@ -18,7 +18,6 @@ import {User} from './components/User';
 import {Market} from './components/Market';
 import {Cropchecker} from './components/Cropchecker';
 import Weather from './components/Weather';
-import Weather from './components/Weather';
 
 
 function App() {
