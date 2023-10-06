@@ -57,6 +57,7 @@ function App() {
             <Route exact path="/User" element={<PrivateRoute element={<User />} />} />
             <Route exact path="/Signup" element={<PublicRoute element={<Signup />} />} />
             <Route exact path="/login" element={<PublicRoute element={<Login />} />} />
+            <Route exact path="/Weather" element={<Weather/>}/>
     </Routes>
     </Router>
     </>
