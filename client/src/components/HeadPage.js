@@ -6,9 +6,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import gurmann from "../static/gur.jpg"
-import yash from "../static/yash.jpeg"
-import har from "../static/harsh.jpg"
+
 
 const products = [
   {
