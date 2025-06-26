@@ -16,7 +16,7 @@ async function main() {
     from: '"KisaanMitr" <maxwell.bartoletti67@ethereal.email>', // sender address
     to: "ymathur123@gmail.com", // list of receivers
     subject: "Hello ✔", // Subject line
-    text: "TU CHUTIYA HAI", // plain text body
+    text: "Hello", // plain text body
     html: "<b>Hello world?</b>", // html body
   });
 
